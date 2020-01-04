@@ -1,6 +1,6 @@
 {
   "name": "bottom-app-bar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A component based on material design app bars.",
   "main": "index.js",
   "scripts": {
