@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableOpacity, Animated, View } from "react-native";
+import { TouchableOpacity, Animated, View, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 
 import Icon from "@expo/vector-icons/MaterialIcons";
