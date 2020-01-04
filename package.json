@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git"
+    "url": "https://github.com/sealove20/bottom-app-bar"
   },
   "keywords": [
     "react-native",
@@ -28,5 +28,9 @@
   },
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.57.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   }
 }

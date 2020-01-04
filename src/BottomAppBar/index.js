@@ -2,8 +2,6 @@ import React from "react";
 import { TouchableOpacity, Animated, View } from "react-native";
 import PropTypes from "prop-types";
 
-import styles from "./styles";
-
 import Icon from "@expo/vector-icons/MaterialIcons";
 
 function BottomAppBar({ animation, toggleOpen, barColor, buttonColor }) {
@@ -50,6 +48,43 @@ function BottomAppBar({ animation, toggleOpen, barColor, buttonColor }) {
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  containerButton: {
+    position: "absolute",
+    padding: 11,
+    alignSelf: "center",
+    backgroundColor: "#fff",
+    borderRadius: 40,
+    bottom: 15,
+    zIndex: 10
+  },
+  button: {
+    borderRadius: 35,
+    width: 50,
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    elevation: 9
+  },
+  bottonBar: {
+    position: "absolute",
+    bottom: 0,
+    zIndex: 1,
+    width: "100%",
+    height: 60
+  },
+  background: {
+    backgroundColor: "rgba(0,0,0,0.3)",
+    position: "absolute",
+    width: 70,
+    height: 70,
+    bottom: 15,
+    borderRadius: 35,
+    alignSelf: "center",
+    zIndex: 1
+  }
+});
 
 BottomAppBar.propTypes = {
   animation: PropTypes.object,
