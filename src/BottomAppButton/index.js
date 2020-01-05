@@ -12,7 +12,8 @@ function BottomAppButton({
   iconName,
   iconColor,
   buttonColor,
-  textColor
+  textColor,
+  fontSize
 }) {
   const { button, labelStyle, buttonContainer } = styles;
   return (
@@ -26,7 +27,11 @@ function BottomAppButton({
       onPress={click}
     >
       <Animated.Text
-        style={[labelStyle, labelAnimationStyle, { color: textColor }]}
+        style={[
+          labelStyle,
+          labelAnimationStyle,
+          { color: textColor, width: 100, fontSize: fontSize }
+        ]}
       >
         {label}
       </Animated.Text>
@@ -69,7 +74,8 @@ BottomAppButton.propTypes = {
   iconName: PropTypes.string,
   iconColor: PropTypes.string,
   labelStyle: PropTypes.object,
-  buttonContainer: PropTypes.object
+  buttonContainer: PropTypes.object,
+  fontSize: PropTypes.number
 };
 
 BottomAppButton.defaultProps = {
@@ -77,7 +83,8 @@ BottomAppButton.defaultProps = {
   iconColor: "#000",
   textColor: "#fff",
   iconName: "add",
-  label: "Label"
+  label: "",
+  fontSize: 18
 };
 
 export default BottomAppButton;
