@@ -23,6 +23,10 @@
   ],
   "author": "Matheus Henrique",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sealove20/bottom-app-bar/issues"
+  },
+  "homepage": "https://github.com/sealove20/bottom-app-bar#readme",
   "dependencies": {
     "prop-types": "^15.7.2"
   },
