@@ -1,40 +1,35 @@
 import React from "react";
 import { StyleSheet, Text, View, Alert } from "react-native";
-
 import { BottomAppContainer, BottomAppButton } from "bottom-app-bar";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>I'm an App!</Text>
-      <BottomAppContainer>
+      <BottomAppContainer barColor={"#48c242"} buttonColor={"#ed952f"}>
         <BottomAppButton
-          label={"Cars"}
+          label={"Pokemons"}
           buttonColor={"#fff"}
-          iconName={"car"}
-          iconColor={"#46f098"}
-          click={() => Alert.alert("Cars click")}
-        />
-        <BottomAppButton
-          label={"Buses"}
-          buttonColor={"#fff"}
-          iconName={"bus"}
+          iconName={"pokeball"}
           iconColor={"#bf440f"}
-          click={() => Alert.alert("Buses click")}
+          labelColor={"#f00"}
+          click={() => Alert.alert("Pokemons")}
         />
         <BottomAppButton
-          label={"Trains"}
-          buttonColor={"#fff"}
-          iconName={"train"}
-          iconColor={"#ded643"}
-          click={() => Alert.alert("Trains click")}
+          label={"Near by"}
+          buttonColor={"#a6e647"}
+          iconName={"pokemon-go"}
+          iconColor={"#f065a6"}
+          labelColor={"#cdf8fa"}
+          click={() => Alert.alert("Near by Pokemons")}
         />
         <BottomAppButton
-          label={"Ships"}
-          buttonColor={"#fff"}
-          iconName={"ferry"}
-          iconColor={"#41b5d9"}
-          click={() => Alert.alert("Ships click")}
+          label={"Duel"}
+          buttonColor={"#559be6"}
+          iconName={"sword-cross"}
+          iconColor={"#ebd34d"}
+          labelColor={"#b75ef2"}
+          click={() => Alert.alert("Duel Started")}
         />
       </BottomAppContainer>
     </View>
