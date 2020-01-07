@@ -2,7 +2,7 @@ import React from "react";
 import { TouchableOpacity, Animated, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 
-import Icon from "@expo/vector-icons/MaterialIcons";
+import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 
 function BottomAppButton({
   animationStyle,
@@ -12,7 +12,7 @@ function BottomAppButton({
   iconName,
   iconColor,
   buttonColor,
-  textColor,
+  labelColor,
   fontSize
 }) {
   const { button, labelStyle, buttonContainer } = styles;
@@ -30,7 +30,7 @@ function BottomAppButton({
         style={[
           labelStyle,
           labelAnimationStyle,
-          { color: textColor, width: 100, fontSize: fontSize }
+          { color: labelColor, width: 100, fontSize: fontSize }
         ]}
       >
         {label}
@@ -69,7 +69,7 @@ BottomAppButton.propTypes = {
   labelAnimationStyle: PropTypes.object,
   click: PropTypes.func,
   button: PropTypes.object,
-  textColor: PropTypes.string,
+  labelColor: PropTypes.string,
   buttonColor: PropTypes.string,
   iconName: PropTypes.string,
   iconColor: PropTypes.string,
@@ -81,10 +81,9 @@ BottomAppButton.propTypes = {
 BottomAppButton.defaultProps = {
   buttonColor: "#4c8bf5",
   iconColor: "#000",
-  textColor: "#fff",
+  labelColor: "#fff",
   iconName: "add",
-  label: "",
-  fontSize: 18
+  label: ""
 };
 
 export default BottomAppButton;

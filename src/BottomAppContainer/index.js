@@ -4,11 +4,7 @@ import PropTypes from "prop-types";
 
 import BottomAppBar from "../BottomAppBar";
 
-export default function BottomAppContainer({
-  children,
-  barColor,
-  buttonColor
-}) {
+function BottomAppContainer({ children, barColor, buttonColor }) {
   const animation = new Animated.Value(0);
   let toggle = false;
 
@@ -268,3 +264,10 @@ BottomAppContainer.propTypes = {
   barColor: PropTypes.string,
   buttonColor: PropTypes.string
 };
+
+BottomAppContainer.defaultProps = {
+  barColor: "#4c8bf5",
+  buttonColor: "#f00"
+};
+
+export default BottomAppContainer;
