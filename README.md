@@ -59,7 +59,7 @@ Simply place a `<BottomAppButton />` tag for each desired button within the `<Bo
 | label | Button label | "" | String |
 | buttonColor | Button color | #4c8bf5 | String |
 | iconColor | Button icon color | #000 | String |
-| iconName |  Vector icon name | add | String |
+| iconName | Material Community Icons Vector Icons name | add | String |
 | labelColor | Color of the button label | #fff | String
 | fontSize | Size of the font | Android/IOS default | Number |
 | click | Function Called when the button is pressed | null | Func |
