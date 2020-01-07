@@ -1,6 +1,14 @@
+![](https://img.shields.io/npm/v/react-native-progress-steps.svg?style=flat)
+![](https://img.shields.io/npm/dt/bottom-app-bar.svg)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 # bottom-app-bar
 
 A customizable React Native component based on material design bottom app bar.
+
+Example One             |  Example Two
+:-------------------------:|:-------------------------:
+![](assets/bottom-app-bar_1.gif) [examples/ExampleOne.js](examples/ExampleOne.js)| ![](assets/bottom-app-bar_2.gif) [examples/ExampleTwo.js](examples/ExampleTwo.js)
 
 ## Installation
 
