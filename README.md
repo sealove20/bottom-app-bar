@@ -65,10 +65,10 @@ Simply place a `<BottomAppButton />` tag for each desired button within the `<Bo
 | Name                      | Description                              | Default     | Type   |
 |---------------------------|------------------------------------------|-------------|--------|
 | label | Button label | "" | String |
+| labelColor | Color of the button label | #fff | String
 | buttonColor | Button color | #4c8bf5 | String |
 | iconColor | Button icon color | #000 | String |
 | iconName | Material Community Icons Vector Icons name | add | String |
-| labelColor | Color of the button label | #fff | String
 | fontSize | Size of the font | Android/IOS default | Number |
 | click | Function Called when the button is pressed | null | Func |
 
